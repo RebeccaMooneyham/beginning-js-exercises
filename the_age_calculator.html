@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Age Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      var birthYear = prompt("Enter your birth year: ");
+      var futureYear = prompt("Enter a year after your birth year: ");
+      var possibleAge1 = futureYear - birthYear - 1;
+      var possibleAge2 = futureYear - birthYear;
+
+      var bothAges = "You will either be " + possibleAge1 + " or " + possibleAge2 + " in the year " + futureYear + ".";
+      alert(bothAges);
+    </script>
+  </body>
+</html>
