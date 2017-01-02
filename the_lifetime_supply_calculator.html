@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Lifetime Supply Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+    var currentAge = prompt("Enter your current age: ");
+    var maxAge = prompt("Enter how old you would like to live to: ");
+    var candy = prompt("How many jelly beans would you like to eat every day: ");
+
+    var totalCandy = (maxAge - currentAge) * candy * 365;
+    alert("You will need approximately " + totalCandy + " jelly beans to last you until the ripe old age of " + maxAge + "!");
+    </script>
+  </body>
+</html>
