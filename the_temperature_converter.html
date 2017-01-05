@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Temperature Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      var celsius = prompt("Enter a temperature in Celsius: ");
+      var celsiusToFahren = (celsius * 9) / 5 + 32;
+      alert(celsius + " degrees Celsius is equal to " + celsiusToFahren + " degrees Fahrenheit.");
+
+      var fahrenheit = prompt("Enter a temperature in Fahrenheit: ");
+      var fahrenToCelsius = (fahrenheit - 32) * 5 / 9;
+      alert(fahrenheit + " degrees Fahrenheit is equal to " + fahrenToCelsius + " degrees Celsius.");
+    </script>
+  </body>
+</html>
