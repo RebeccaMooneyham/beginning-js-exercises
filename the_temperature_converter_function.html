@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Temperature Converter Functions</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      function celsiusToFahrenheit(celsius) {
+        var celsiusToFahren = (celsius * 9) / 5 + 32;
+        alert(celsius + " degrees Celsius is equal to " + celsiusToFahren + " degrees Fahrenheit.");
+      }
+
+      celsiusToFahrenheit(21);
+      celsiusToFahrenheit(0);
+      celsiusToFahrenheit(32);
+      celsiusToFahrenheit(100);
+
+      function fahrenheitToCelsius(fahrenheit) {
+        var fahrenToCelsius = (fahrenheit - 32) * 5 / 9;
+        alert(fahrenheit + " degrees Fahrenheit is equal to " + fahrenToCelsius + " degrees Celsius.");
+      }
+
+      fahrenheitToCelsius(21);
+      fahrenheitToCelsius(0);
+      fahrenheitToCelsius(32);
+      fahrenheitToCelsius(100);
+    </script>
+  </body>
+</html>
