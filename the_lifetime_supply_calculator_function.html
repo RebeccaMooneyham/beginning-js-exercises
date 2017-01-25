@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Lifetime Supply Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+    function calculateSupply(age, amountPerDay) {
+      var ripeOldAge = 85;
+      var yearsLeft = ripeOldAge - age;
+      var snack = yearsLeft * amountPerDay * 365;
+
+      alert("You will need " + snack + " Skittles to last you until the ripe old age of " + ripeOldAge + ".");
+    }
+
+    calculateSupply(33, Math.round(2.6));
+    calculateSupply(84, Math.round(.5));
+    calculateSupply(12, Math.round(2));
+    </script>
+  </body>
+</html>
