@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      function squareNumber(num) {
+        var square = num * num;
+        console.log("The result of squaring the number " + num + " is " + square + ".");
+        return square;
+      }
+      squareNumber(7);
+
+      function halfNumber(num) {
+        var half = num / 2;
+        console.log("Half of " + num + " is " + half + ".");
+        return half;
+      }
+      halfNumber(5);
+
+      function percentOf(num1, num2) {
+        var percent = (num1 / num2) * 100;
+        console.log(num1 + " is " + percent + "% of " + num2 + ".");
+        return percent;
+      }
+      percentOf(50, 100);
+
+      function areaOfCircle(radius) {
+        var area = (Math.PI * Math.pow(radius, 2)).toFixed(2);
+        console.log("The area for a circle with radius " + radius + " is " + area + ".");
+        return area;
+      }
+      areaOfCircle(2);
+
+      function doEverything(num) {
+        var halfNum = halfNumber(num);
+        var square = squareNumber(halfNum);
+        var circleArea = areaOfCircle(square);
+        var percentage = percentOf(circleArea, square);
+      }
+      doEverything(10);
+
+    </script>
+  </body>
+</html>
