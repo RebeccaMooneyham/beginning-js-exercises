@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter 4, Exercise 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      function timesTable(factor, start, end) {
+
+        var facts = [];
+
+        for (var i = start; i <= end; i++) {
+          facts = factor * i;
+          console.log(factor + " times " + i + " = " + facts);
+        }
+      }
+      timesTable(3, 10, 21);
+    </script>
+  </body>
+</html>
