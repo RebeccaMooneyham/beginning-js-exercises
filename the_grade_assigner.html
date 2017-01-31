@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Grade Assigner</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      function assignGrade(score) {
+        if (score >= 90) {
+          return "A";
+        } else if (score >= 80) {
+          return "B";
+        } else if (score >= 70) {
+          return "C";
+        } else if (score >= 60) {
+          return "D";
+        } else {
+          return "F";
+        }
+      }
+      console.log("You got a " + assignGrade(20));
+      console.log("You got a " + assignGrade(81));
+      console.log("You got a " + assignGrade(69));
+      console.log("You got a " + assignGrade(100));
+    </script>
+  </body>
+</html>
