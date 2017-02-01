@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Pluralizer</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      function pluralize(noun, num) {
+        if (num != 1 && noun != "sheep") {
+          return num + " " + noun + 's'
+        } else {
+          return num + " " + noun;
+        }
+      }
+      console.log(pluralize("dog", 5));
+      console.log(pluralize("sheep", 7));
+      console.log(pluralize("cat", 1));
+      console.log(pluralize("lizard", 7));
+    </script>
+  </body>
+</html>
