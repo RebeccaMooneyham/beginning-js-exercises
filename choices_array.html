@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Choices Array</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <script>
+      var choices = ["make ATC cards", "read", "play SWTOR", "watch Babylon 5"];
+        for (var i = 0; i < choices.length; i++) {
+            console.log("My #" + (i + 1) + " choice is to " + choices[i] + ".");
+        }
+
+        var choices = ["make ATC cards", "read", "play SWTOR", "watch Babylon 5"];
+          for (var i = 0; i < choices.length; i++) {
+            var choiceNum = i + 1;
+            var suffix;
+            if (choiceNum === 1) {
+              suffix = "st";
+            } else if (choiceNum === 2) {
+              suffix = "nd";
+            } else if (choiceNum === 3) {
+              suffix = "rd";
+            } else {
+              suffix = "th";
+            }
+              console.log("My " + choiceNum + suffix + " choice is to " + choices[i] + ".");
+          }
+    </script>
+  </body>
+</html>
