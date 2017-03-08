@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chapter 5, Exercise 1</title>
+</head>
+<body>
+  <script>
+    var months = ["January", "February", "March", "April", "May",
+                  "June", "July", "August", "September", "October",
+                  "November", "December"];
+    var dateNow = new Date()
+    var nextYear = dateNow.getFullYear() + 1;
+    var monthNow = months[dateNow.getMonth()];
+    var dayNow = dateNow.getDate();
+
+    document.write("One year from now is " + monthNow + " "+ dayNow + ", " + nextYear);
+  </script>
+</body>
+</html>
